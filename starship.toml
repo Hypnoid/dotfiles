@@ -45,14 +45,14 @@ min_time = 0
 show_always = true
 style_user = "fg:bright-white bg:#1a5fb4"
 style_root = "fg:bright-white bg:#1a5fb4"
-format = '[$user]($style)'
+format = '[$user ]($style)'
 disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
 [hostname]
 style = "fg:bright-white bg:#1a5fb4"
-format = '[@$hostname ]($style)'
+format = '[ @ $hostname ]($style)'
 disabled = false # Disabled by default
 
 [directory]
