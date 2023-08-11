@@ -65,9 +65,15 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
+# For english use
+"Pictures" = " "
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Videos" = " "
+# For german use
 "Bilder" = " "
 "Dokumente" = " "
-"Downloads" = " "
 "Musik" = " "
 "Videos" = " "
 # Keep in mind that the order matters. For example:
