@@ -66,10 +66,10 @@ truncation_symbol = "…/"
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
 # For english use
-"Pictures" = "🖼️ "
 "Documents" = "🗃️ "
 "Downloads" = "⬇️ "
 "Music" = "🎹 "
+"Pictures" = "🖼️ "
 "Videos" = "📼 "
 # For german use
 "Bilder" = "🖼️ "
