@@ -66,16 +66,16 @@ truncation_symbol = "…/"
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
 # For english use
-"Pictures" = " "
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Videos" = " "
+"Pictures" = "🖼️ "
+"Documents" = "🗃️ "
+"Downloads" = "⬇️ "
+"Music" = "🎹 "
+"Videos" = "📼 "
 # For german use
-"Bilder" = " "
-"Dokumente" = " "
-"Musik" = " "
-"Videos" = " "
+"Bilder" = "🖼️ "
+"Dokumente" = "🗃️ "
+"Musik" = "🎹 "
+"Videos" = "📼 "
 # Keep in mind that the order matters. For example:
 # "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.
@@ -100,7 +100,7 @@ format = '[ $symbol($version) ]($style)'
 
 # Docker
 [docker_context]
-symbol = " "
+symbol = "🐋"
 style = "fg:black bg:#99c1f1"
 format = '[ $symbol $context ]($style) $path'
 
