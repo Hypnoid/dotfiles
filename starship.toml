@@ -2,23 +2,23 @@ format = """
 $fill\
 [](fg:#deddda)\
 $character\
-[](fg:#deddda bg:#1a5fb4)\
+[](fg:#deddda bg:#1a5fb4)\
 $cmd_duration\
 [ ](fg:#1a5fb4)\
 $line_break\
 [](fg:#1a5fb4)\
 $username\
 $hostname\
-[](fg:#1a5fb4 bg:#1c71d8)\
+[](fg:#1a5fb4 bg:#1c71d8)\
 $directory\
-[](fg:#1c71d8 bg:#3584e4)\
+[](fg:#1c71d8 bg:#3584e4)\
 $git_branch\
 $git_status\
-[](fg:#3584e4 bg:#62a0ea)\
+[](fg:#3584e4 bg:#62a0ea)\
 $python\
-[](fg:#62a0ea bg:#99c1f1)\
+[](fg:#62a0ea bg:#99c1f1)\
 $docker_context\
-[](fg:#99c1f1 bg:#deddda)\
+[](fg:#99c1f1 bg:#deddda)\
 $time\
 [ ](fg:#deddda)\
 """
