@@ -8,7 +8,7 @@ set autowrite
 
 set ignorecase
 
-"Insert indents in appropriate Lisp format. ( ), { }, [[, and ]] are modified to have meaning for Lisp.
+"? Insert indents in appropriate Lisp format. ( ), { }, [[, and ]] are modified to have meaning for Lisp.
 set lisp
 
 "? Display line numbers on the left side of the screen during an editing session.
