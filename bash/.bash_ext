@@ -1,11 +1,11 @@
-# This is an extension of the .bashrc file, where I customize bash. I separate the two just to keep things clean.
+#!  This is an extension of the .bashrc file, where I customize bash. I separate the two just to keep things clean.
 
-# Set up bash to use Starship
+#?  Set up bash to use Starship
 eval "$(starship init bash)"
 
-# Aliases
+	## Aliases ##
 
-# Style the sudo prompt in the style of my starship.toml for consistency.
+#?  Style the sudo prompt in the style of my starship.toml for consistency.
 alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mPlease confirm with the superuser's password:\e[m\e[31m\e[m\n")'"		# English version
 #alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mBitte bestätigen Sie mit dem Passwort des Superusers:\e[m\e[31m\e[m\n")'"	# German version
 alias fp="flatpak"
