@@ -4,7 +4,7 @@
 	## Specifications ##
 
 #? Specify the theme/chrome folder
-chromeDir="~/.var/app/io.gitlab.librewolf-community/.librewolf/chrome/"
+chromeDir=~/.var/app/io.gitlab.librewolf-community/.librewolf/chrome/
 #? Specify the git repo of the wanted theme
 themeUrl="https://github.com/rafaelmardojai/firefox-gnome-theme.git"
 #? Specify the git repo's name of the wanted theme
