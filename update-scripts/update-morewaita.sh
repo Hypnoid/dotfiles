@@ -5,7 +5,8 @@
 
 #? Clone the theme's git repo
 git clone https://github.com/somepaulo/MoreWaita.git
-cd Morewaita
 #? Run the theme's installer
-source install.sh
+source MoreWaita/install.sh
+#? Remove the rest of the uneeded repo
+sudo rm -r MoreWaita
 
