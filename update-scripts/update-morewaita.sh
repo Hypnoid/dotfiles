@@ -1,12 +1,20 @@
 #!/usr/bin/env sh
 # This script installs/updates the Morewaita icon theme
 
-	## Installation
+repoUrl="https://github.com/somepaulo/MoreWaita.git"
+iconsDir=~/.icons
+repoName="MoreWaita"
 
+	## Installation ##
+
+#?
+mkdir -p $iconsDir
+#? Remove current MoreWaita install, if installed
+sudo rm -r $iconsDir/$repoName 2>/dev/null
+#?
+cd $iconsDir
 #? Clone the theme's git repo
-git clone https://github.com/somepaulo/MoreWaita.git
-#? Run the theme's installer
-source MoreWaita/install.sh
-#? Remove the rest of the uneeded repo
-sudo rm -r MoreWaita
+git clone -q https://github.com/somepaulo/MoreWaita.git
+#? 
+gtk-update-icon-cache -f -t $repoName && xdg-desktop-menu forceupdate
 
