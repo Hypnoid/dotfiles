@@ -1,30 +1,30 @@
 #! This is a list of extra filters for uBlock Origin. This list was made with yokoffing's guide to uBO filters: https://github.com/yokoffing/filterlists
 
-	## Privacy ##
+	# Privacy #
 
 #? Hagezi's Personal DNS Blocklist
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt&title=Hagezi%20Personal%20DNS%20Blocklist
 #? Privacy Essentials
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yokoffing/filterlists/main/privacy_essentials.txt&title=privacy%20essentials
 
-	## URL Tracking Parameters ##
+	# URL Tracking Parameters #
 
 #? Actually Legitimate URL Shortener Tool
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt&title=URL%20Shortener%20Tool
 
-	## Annoyances ##
+	# Annoyances #
 	
 #? Browse websites without logging in
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt&title=Browse%20websites%20without%20logging%20in
 
-	## Paywalls ##
+	# Paywalls #
 	
 #? Bypass Paywalls Clean filter
 https://subscribe.adblockplus.org/?location=https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt&title=Bypass%20Paywalls%20Clean
 #? Anti-paywall filters 
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt&title=Anti-paywall%20filters
 
-	## Security ##
+	# Security #
 
 #? Most Abused TLDs
 https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt&title=Most%20Abused%20TLDs
