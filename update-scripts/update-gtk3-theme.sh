@@ -14,9 +14,9 @@ file="adw-gtk3${latVer//./-}.tar.xz"
 	## Intallation ##
 
 #? Download the latest archive from the git repo
-wget $repoUrl/releases/latest/download/$file -qO $file
+wget $repoUrl/releases/latest/download/$file -nv -O $file
 #? Unyip the archive into the themes folder
-tar -xf $file -C $themesDir
+tar -xf $file -C $themesDir && printf "\'$file\' unziped\n"
 #? Remove the now useless archive
-rm $file
+rm -v $file
 
