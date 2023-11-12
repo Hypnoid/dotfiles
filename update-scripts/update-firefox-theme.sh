@@ -17,7 +17,7 @@ oldTheme="firefox-gnome-theme"
 #? Change directory to the themes/chrome folder
 cd $chromeDir
 #? Move the user.js (if installed) for safe keeping
-mv -f $oldTheme/configuration/user.js user.js
+mv -vf $oldTheme/configuration/user.js user.js
 #? Remove the old/outdated theme (if installed)
 sudo rm -r $oldTheme/ userChrome.css userContent.css
 
@@ -29,5 +29,5 @@ sed -i '1s/^/@import "firefox-gnome-theme\/userChrome.css";\n/' userChrome.css
 sed -i '1s/^/@import "firefox-gnome-theme\/userContent.css";\n/' userContent.css
 
 #? Move the user.js back
-mv -f user.js firefox-gnome-theme/configuration/
+mv -vf user.js firefox-gnome-theme/configuration/
 
