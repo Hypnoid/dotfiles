@@ -1,31 +1,38 @@
 #! This is a list of extra filters for uBlock Origin. This list was made with yokoffing's guide to uBO filters: https://github.com/yokoffing/filterlists
 
-	# Privacy #
+	# PRIVACY #
 
 #? Hagezi's Personal DNS Blocklist
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt&title=Hagezi%20Personal%20DNS%20Blocklist
-#? Privacy Essentials
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yokoffing/filterlists/main/privacy_essentials.txt&title=privacy%20essentials
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt
 
-	# URL Tracking Parameters #
+#? yokoffing's click2load filters
+https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt
+
+	# URL TRACKING PARAMETERS #
 
 #? Actually Legitimate URL Shortener Tool
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt&title=URL%20Shortener%20Tool
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
 
-	# Annoyances #
+	# FONTS #
+	
+#? Block third-party fonts
+https://raw.githubusercontent.com/yokoffing/filterlists/main/block_third_party_fonts.txt
+
+	# ANNOYANCES #
 	
 #? Browse websites without logging in
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt&title=Browse%20websites%20without%20logging%20in
+https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
 
-	# Paywalls #
+	# PAYWALLS #
 	
 #? Bypass Paywalls Clean filter
-https://subscribe.adblockplus.org/?location=https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt&title=Bypass%20Paywalls%20Clean
-#? Anti-paywall filters 
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt&title=Anti-paywall%20filters
+https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt
 
-	# Security #
+#? Anti-paywall filters
+https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt
+
+	# SECURITY #
 
 #? Most Abused TLDs
-https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt&title=Most%20Abused%20TLDs
+https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt
 
