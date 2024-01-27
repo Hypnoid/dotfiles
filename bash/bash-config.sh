@@ -18,20 +18,18 @@ alias gte="flatpak run org.gnome.TextEditor"
 
 alias up=" \
 	printf ' \e[1m\e[4mSystem Update:\e[0m\n' && read -s && \
-	sudo dnf upgrade ; \
-	printf '\n \e[1m\e[4mSystem Cleaning:\e[0m\n' && read -s && \
-	sudo dnf autoremove ; sudo dnf clean all ; \
+	sudo dnf upgrade && sudo dnf autoremove && sudo dnf clean all ; \
 	printf '\n \e[1m\e[4mFlatpak Update:\e[0m\n' && read -s && \
-	flatpak update \
+	flatpak update && flatpak remove --unused --delete-data \
 	"
-alias upman=" \
-	printf ' \e[1m\e[4mUpdate Firefox Theme:\e[0m\n' && read -s && \
-	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-firefox-theme.sh ; \
-	printf '\n \e[1m\e[4mUpdate MoreWaita:\e[0m\n' && read -s && \
-	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-morewaita.sh ; \
-	printf '\n \e[1m\e[4mUpdate GTK3 Theme:\e[0m\n' && read -s && \
-	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-gtk3-theme.sh ; \
-	"
+#alias upman=" \
+#	printf ' \e[1m\e[4mUpdate Firefox Theme:\e[0m\n' && read -s && \
+#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-firefox-theme.sh ; \
+#	printf '\n \e[1m\e[4mUpdate MoreWaita:\e[0m\n' && read -s && \
+#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-morewaita.sh ; \
+#	printf '\n \e[1m\e[4mUpdate GTK3 Theme:\e[0m\n' && read -s && \
+#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-gtk3-theme.sh ; \
+#	"
 
 alias mu="yt-dlp -x --embed-metadata --embed-thumbnail --ppa 'ThumbnailsConvertor+FFmpeg_o:-vf crop="in_h:in_h"' -o '%(track)s – %(artist)s'"
 
