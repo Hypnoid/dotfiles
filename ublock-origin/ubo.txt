@@ -1,38 +1,38 @@
-#! This is a list of extra filters for uBlock Origin. This list was made with yokoffing's guide to uBO filters: https://github.com/yokoffing/filterlists
+!! This is a list of extra filters for uBlock Origin. This list was made with yokoffing's guide to uBO filters: https://github.com/yokoffing/filterlists
 
-	# PRIVACY #
+	! PRIVACY !
 
-#? Hagezi's Personal DNS Blocklist
+!? Hagezi's Personal DNS Blocklist
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal.txt
 
-#? yokoffing's click2load filters
+!? yokoffing's click2load filters
 https://raw.githubusercontent.com/yokoffing/filterlists/main/click2load.txt
 
-	# URL TRACKING PARAMETERS #
+	! URL TRACKING PARAMETERS !
 
-#? Actually Legitimate URL Shortener Tool
+!? Actually Legitimate URL Shortener Tool
 https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
 
-	# FONTS #
+	! FONTS !
 	
-#? Block third-party fonts
+!? Block third-party fonts
 https://raw.githubusercontent.com/yokoffing/filterlists/main/block_third_party_fonts.txt
 
-	# ANNOYANCES #
+	! ANNOYANCES !
 	
-#? Browse websites without logging in
+!? Browse websites without logging in
 https://raw.githubusercontent.com/DandelionSprout/adfilt/master/BrowseWebsitesWithoutLoggingIn.txt
 
-	# PAYWALLS #
+	! PAYWALLS !
 	
-#? Bypass Paywalls Clean filter
+!? Bypass Paywalls Clean filter
 https://gitlab.com/magnolia1234/bypass-paywalls-clean-filters/-/raw/main/bpc-paywall-filter.txt
 
-#? Anti-paywall filters
+!? Anti-paywall filters
 https://raw.githubusercontent.com/liamengland1/miscfilters/master/antipaywall.txt
 
-	# SECURITY #
+	! SECURITY !
 
-#? Most Abused TLDs
+!? Most Abused TLDs
 https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds-ublock.txt
 
