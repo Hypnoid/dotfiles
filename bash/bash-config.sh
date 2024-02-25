@@ -33,14 +33,5 @@ alias clean=" \
 	flatpak remove --unused --delete-data \
 	"
 
-#alias upman=" \
-#	printf ' \e[1m\e[4mUpdate Firefox Theme:\e[0m\n' && read -s && \
-#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-firefox-theme.sh ; \
-#	printf '\n \e[1m\e[4mUpdate MoreWaita:\e[0m\n' && read -s && \
-#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-morewaita.sh ; \
-#	printf '\n \e[1m\e[4mUpdate GTK3 Theme:\e[0m\n' && read -s && \
-#	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-gtk3-theme.sh ; \
-#	"
-
 alias mu="yt-dlp -x --embed-metadata --embed-thumbnail --ppa 'ThumbnailsConvertor+FFmpeg_o:-vf crop="in_h:in_h"' -o '%(track)s – %(artist)s'"
 
