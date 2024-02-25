@@ -14,7 +14,8 @@ set -o vi
 alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mBitte bestätigen Sie mit dem Passwort des Superusers:\e[m\e[31m\e[m\n")'"	# German version
 
 alias fp="flatpak"
-alias gte="flatpak run org.gnome.TextEditor"
+alias open="gio open"
+alias trash="gio trash"
 
 alias update=" \
 	printf ' \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s && \
