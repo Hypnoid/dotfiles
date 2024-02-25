@@ -29,7 +29,7 @@ alias update=" \
 alias clean=" \
 	printf '    \e[1m\e[4mClean DNF:\e[0m\n' && read -s			&& \
 	sudo dnf autoremove && sudo dnf clean all					; \
-	printf '\n    \e[1m\e[4mClean Flatpaks:\e[0m\n' && read -s		&& \
+	printf '\n    \e[1m\e[4mClean Flatpaks:\e[0m' && read -s		&& \
 	flatpak remove --unused --delete-data						\
 	"
 
