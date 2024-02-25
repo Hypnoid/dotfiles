@@ -16,12 +16,20 @@ alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mBitte bestätigen Sie mit de
 alias fp="flatpak"
 alias gte="flatpak run org.gnome.TextEditor"
 
-alias up=" \
-	printf ' \e[1m\e[4mSystem Update:\e[0m\n' && read -s && \
-	sudo dnf upgrade && sudo dnf autoremove && sudo dnf clean all ; \
-	printf '\n \e[1m\e[4mFlatpak Update:\e[0m\n' && read -s && \
-	flatpak update && flatpak remove --unused --delete-data \
+alias update=" \
+	printf ' \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s && \
+	sudo dnf upgrade ; \
+	printf '\n \e[1m\e[4mUpdate Flatpaks:\e[0m\n' && read -s && \
+	flatpak update \
+	" && alias up="update"
+
+alias clean=" \
+	printf ' \e[1m\e[4mClean DNF:\e[0m\n' && read -s && \
+	sudo dnf autoremove && sudo dnf clean all ; \
+	printf '\n \e[1m\e[4mClean Flatpaks:\e[0m\n' && read -s && \
+	flatpak remove --unused --delete-data \
 	"
+
 #alias upman=" \
 #	printf ' \e[1m\e[4mUpdate Firefox Theme:\e[0m\n' && read -s && \
 #	sh ~/Desktop/GitHub/dotfiles/update-scripts/update-firefox-theme.sh ; \
