@@ -21,7 +21,9 @@ alias update=" \
 	printf ' \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s && \
 	sudo dnf upgrade ; \
 	printf '\n \e[1m\e[4mUpdate Flatpaks:\e[0m\n' && read -s && \
-	flatpak update \
+	flatpak update ; \
+	printf '\n \e[1m\e[4mUpdate auto-cpufreq:\e[0m\n' && read -s && \
+	sudo auto-cpufreq --update \
 	" && alias up="update"
 
 alias clean=" \
