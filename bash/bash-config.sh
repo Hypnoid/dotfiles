@@ -11,7 +11,7 @@ set -o vi
 
 #?  Style the sudo prompt in the style of my starship.toml for consistency.
 #alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mPlease confirm with the superuser's password:\e[m\e[31m\e[m\n")'"		# English version
-alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mBitte bestätigen Sie mit dem Passwort des Superusers:\e[m\e[31m\e[m\n")'"	# German version
+#alias sudo="sudo -p '$(printf "\e[31m\e[41m\e[97mBitte bestätigen Sie mit dem Passwort des Superusers:\e[m\e[31m\e[m\n")'"	# German version
 
 alias fp="flatpak"
 alias open="gio open"
