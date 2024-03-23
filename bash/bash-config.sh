@@ -17,19 +17,21 @@ alias fp="flatpak"
 alias open="gio open"
 alias trash="gio trash"
 
-alias update=" \
-	printf '    \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s && \
-	sudo dnf upgrade ; \
-	printf '\n    \e[1m\e[4mUpdate Flatpaks:\e[0m\n' && read -s	&& \
+alias upgrade=" \
+	printf '    \e[1m\e[4mAPT Update:\e[0m\n' && read -s && \
+	sudo apt update ; \
+	printf '\n    \e[1m\e[4mAPT Upgrade:\e[0m\n' && read -s	&& \
+	sudo apt upgrade ; \
+	printf '\n    \e[1m\e[4mFlatpak Upgrade:\e[0m\n' && read -s	&& \
 	flatpak update ; \
-	printf '\n    \e[1m\e[4mUpdate auto-cpufreq:\e[0m\n' && read -s && \
+	printf '\n    \e[1m\e[4mauto-cpufreq Upgrade:\e[0m\n' && read -s && \
 	sudo auto-cpufreq --update \
-	" && alias up="update"
+	" && alias up="upgrade"
 
 alias clean=" \
-	printf '    \e[1m\e[4mClean DNF:\e[0m\n' && read -s && \
-	sudo dnf autoremove && sudo dnf clean all ; \
-	printf '\n    \e[1m\e[4mClean Flatpaks:\e[0m' && read -s && \
+	printf '    \e[1m\e[4mClean APT:\e[0m\n' && read -s && \
+	sudo apt autoremove --purge && sudo apt autoclean && sudo apt clean ; \
+	printf '\n    \e[1m\e[4mClean Flatpak:\e[0m' && read -s && \
 	flatpak remove --unused --delete-data \
 	"
 
