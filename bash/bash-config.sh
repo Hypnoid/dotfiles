@@ -2,7 +2,7 @@
 #  This is an extension of the .bashrc file, where I customize bash. I separate the two just to keep things clean.
 
 #?  Set up bash to use Starship
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 
 #? Enable vi mode for bash input
 set -o vi
