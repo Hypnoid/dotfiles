@@ -18,19 +18,19 @@ alias open="gio open"
 alias trash="gio trash"
 
 alias update=" \
-	printf '    \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s				&& \
-	sudo dnf upgrade												; \
-	printf '\n    \e[1m\e[4mUpdate Flatpaks:\e[0m\n' && read -s		&& \
-	flatpak update													; \
-	printf '\n    \e[1m\e[4mUpdate auto-cpufreq:\e[0m\n' && read -s	&& \
-	sudo auto-cpufreq --update										\
+	printf '    \e[1m\e[4mUpdate DNF:\e[0m\n' && read -s && \
+	sudo dnf upgrade ; \
+	printf '\n    \e[1m\e[4mUpdate Flatpaks:\e[0m\n' && read -s	&& \
+	flatpak update ; \
+	printf '\n    \e[1m\e[4mUpdate auto-cpufreq:\e[0m\n' && read -s && \
+	sudo auto-cpufreq --update \
 	" && alias up="update"
 
 alias clean=" \
-	printf '    \e[1m\e[4mClean DNF:\e[0m\n' && read -s			&& \
-	sudo dnf autoremove && sudo dnf clean all					; \
-	printf '\n    \e[1m\e[4mClean Flatpaks:\e[0m' && read -s		&& \
-	flatpak remove --unused --delete-data						\
+	printf '    \e[1m\e[4mClean DNF:\e[0m\n' && read -s && \
+	sudo dnf autoremove && sudo dnf clean all ; \
+	printf '\n    \e[1m\e[4mClean Flatpaks:\e[0m' && read -s && \
+	flatpak remove --unused --delete-data \
 	"
 
 alias mu="yt-dlp -x --embed-metadata --embed-thumbnail --ppa 'ThumbnailsConvertor+FFmpeg_o:-vf crop="in_h:in_h"' -o '%(track)s – %(artist)s'"
