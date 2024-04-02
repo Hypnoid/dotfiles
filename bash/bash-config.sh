@@ -16,6 +16,7 @@ set -o vi
 alias fp="flatpak"
 alias open="gio open"
 alias trash="gio trash"
+alias la="ls -lah"
 
 alias upgrade=" \
 	printf '    \e[1m\e[4mAPT Update:\e[0m\n' && read -s && \
